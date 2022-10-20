@@ -58,8 +58,7 @@ function Upload() {
                        Refresh
                     </button>
                 </div>        
-            </div>
-             
+            </div>    
         }
     </div>
   )
