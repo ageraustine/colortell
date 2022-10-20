@@ -1,3 +1,9 @@
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
