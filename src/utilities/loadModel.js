@@ -1,10 +1,8 @@
-const tf = require('@tensorflow/tfjs');
-const tfnode = require('@tensorflow/tfjs-node');
+import * as tf from '@tensorflow/tfjs';
 
-async function loadModel(modelPath){
-    const handler = tfnode.io.fileSystem(modelPath);
-    const model = await tf.loadLayersModel(handler);
+async function loadModel(url){
+    const model = await tf.loadLayersModel(url);
     return model
 }
-
+// /home/techie/Desktop/projects/ai-ml/colourteller/color-teller-ui/public/Color-Model/colorTeller/model.json
 export default loadModel

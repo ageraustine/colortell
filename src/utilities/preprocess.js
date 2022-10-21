@@ -1,8 +1,8 @@
-const tf = require('@tensorflow/tfjs');
- 
+import * as tf from '@tensorflow/tfjs';
+
 async function preprocess(image){
-    scalingLayer = tf.layers.rescaling(1/255)
-    const img = scalingLayer(img)
+    const scalingLayer = tf.layers.rescaling(1/255)
+    let img = scalingLayer(image)
     img = tf.expandDims(img,0)
     return tf.image.resizeBilinear(img,[256, 256])
 }
